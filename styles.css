@@ -17,6 +17,7 @@ h3 {
     letter-spacing:3px;
     font-weight:100;
     padding:20px;
+    text-align: center;
 }
 
 p {
@@ -71,6 +72,6 @@ p {
 
 p.project {
     padding:20px;
-    font-size: 1px;
+    font-size: 18px;
     text-align: left;
 }

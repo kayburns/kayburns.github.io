@@ -18,6 +18,13 @@ h1 {
     padding:20px;
 }
 
+h3 {
+    letter-spacing:3px;
+    font-weight:100;
+    padding:20px;
+    text-align: left;
+}
+
 p {
     font-size: 18px;
     line-height: 27px;
@@ -51,7 +58,6 @@ p {
     text-decoration:none;
 }
 
-
 .section {
     margin-left: auto;
     margin-right: auto;
@@ -65,4 +71,12 @@ p {
 
 #menu-bar:hover {
     color: gray;
+}
+
+/* Project Page Styles */
+
+p.project {
+    padding:20px;
+    font-size: 1px;
+    text-align: left;
 }

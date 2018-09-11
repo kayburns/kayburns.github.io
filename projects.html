@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> kaylee's projects </title>
+        <link href="http://fonts.googleapis.com/css?family=EB+Garamond:400,300,700,600,100" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="styles.css"/> 
+    </head>
+    <body>
+        <div class=section id="heading">
+            <h1> Projects </h1>
+        </div>
+        <div class=section>
+            <h3> Exploiting Attention to Reveal Shortcomings in Memory Models </h3>
+            <a class=menu-item href="./media/emnlp_18.pdf" target="_blank">
+                paper
+            </a>
+                <p> The decision making processes of deep networks are difficult to understand and while their accuracy often improves with increased architectural complexity, so too does their opacity. Practical use of machine learning models, especially for question and answering applications, demands a system that is interpretable. We analyze the attention of a memory network model to reconcile contradictory performance on a challenging question-answering dataset that is inspired by theory-of-mind experiments. We equate success on questions to task classification, which explains not only test-time failures but also how well the model generalizes to new training conditions. </p>
+            <h3> Object Hallucination in Image Captioning </h3>
+            <a class=menu-item href="https://arxiv.org/pdf/1809.02156.pdf" target="_blank">
+                arxiv
+            </a>
+                <p> Despite continuously improving performance, contemporary image captioning models are prone to "hallucinating" objects that are not actually in a scene. One problem is that standard metrics only measure similarity to ground truth captions and may not fully capture image relevance. In this work, we propose a new image relevance metric to evaluate current models with veridical visual labels and assess their rate of object hallucination. We analyze how captioning model architectures and learning objectives contribute to object hallucination, explore when hallucination is likely due to image misclassification or language priors, and assess how well current sentence metrics capture object hallucination. We investigate these questions on the standard image captioning benchmark, MSCOCO, using a diverse set of models. Our analysis yields several interesting findings, including that models which score best on standard sentence metrics do not always have lower hallucination and that models which hallucinate more tend to make errors driven by language priors.</p>
+            <h3> Evaluating Theory of Mind in Question Answering </h3>
+            <a class=menu-item href="https://arxiv.org/pdf/1808.09352.pdf" target="_blank">
+                arxiv
+            </a>
+            <a class=menu-item href="https://github.com/kayburns/tom-qa-dataset" target="_blank">
+                code (coming soon!)
+            </a>
+                <p> We propose a new dataset for evaluating question answering models with respect to their capacity to reason about beliefs. our tasks are inspired by theory-of-mind experiments that examine whether children are able to reason about the beliefs of others, in particular when those beliefs differ from reality. we evaluate a number of recent neural models with memory augmentation. we find that all fail on our tasks, which require keeping track of inconsistent states of the world; moreover, the models’ accuracy decreases notably when random sentences are introduced to the tasks at test. </p>
+            <h3> women also snowboard: overcoming bias in captioning models </h3>
+            <a class=menu-item href="https://arxiv.org/pdf/1803.09797.pdf" target="_blank">
+                arxiv
+            </a>
+            <a class=menu-item href="https://github.com/kayburns/women-snowboard/tree/master/research/im2txt" target="_blank">
+                code
+            </a>
+            <img src="media/projects/snowboard_teaser.jpg" style="width:600px;">
+                <p> Most machine learning methods are known to capture and exploit biases of the training data. While some biases are beneficial for learning, others are harmful. Specifically, image captioning models tend to exaggerate biases present in training data (e.g., if a word is present in 60% of training sentences, it might be predicted in 70% of sentences at test time). This can lead to incorrect captions in domains where unbiased captions are desired, or required, due to over-reliance on the learned prior and image context. In this work we investigate generation of gender-specific caption words (e.g. man, woman) based on the appearance or the image context. We introduce a new Equalizer model that encourages equal gender probability when gender evidence is occluded in a scene and confident predictions when gender evidence is present. The resulting model is forced to look at a person rather than use contextual cues to make a gender-specific prediction. The losses that comprise our model, the Appearance Confusion Loss and the Confident Loss, are general, and can be added to any description model in order to mitigate impacts of unwanted bias in a description dataset. Our proposed model has lower error than prior work when describing images with people and mentioning their gender and more closely matches the ground truth ratio of sentences including women to sentences including men. Finally, we show that our model is more often looking at people when predicting their gender. </p>
+        </div>
+    </body>
+</html>

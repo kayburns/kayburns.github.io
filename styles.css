@@ -1,27 +1,65 @@
 /* styles.css */
 
+/* https://github.com/edwardtufte/tufte-css.git */
+@font-face { font-family: "et-book";
+                 src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+                              src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+                                           font-weight: normal;
+                                                        font-style: normal; }
+
 body {
-    font-family: "EB Garamond", "Times New Roman";
+    font-family: et-book, "EB Garamond", "Times New Roman";
     text-align: center;
 }
 
 h1 {
     letter-spacing:3px;
     font-weight:300;
+    padding:20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .menu-item {
     padding: 10px;
 }
 
+.menu-item:link {
+    color:black;
+    border-bottom:none;
+    text-decoration:none;
+}
+
+.menu-item:visited {
+    color:black;
+    border-bottom:none;
+    text-decoration:none;
+}
+
+.menu-item:hover {
+    color:grey;
+    border-bottom:none;
+    text-decoration:none;
+}
+
+.menu-item:hover {
+    color:grey;
+    border-bottom:none;
+    text-decoration:none;
+}
+
+
 .section {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    max-width: 500px;
+    max-width: 600px;
 }
 
-#menu-bar {
+#menu-bar:visited {
     color: black;
 }
 

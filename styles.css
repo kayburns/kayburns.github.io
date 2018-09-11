@@ -46,10 +46,16 @@ p {
     text-decoration:none;
 }
 
+.menu-item:visited {
+    color: black;
+}
+
 .menu-item:hover {
-    color:grey;
-    border-bottom:none;
-    text-decoration:none;
+    color: gray;
+}
+
+.menu-item:active {
+    color: gray;
 }
 
 .section {
@@ -59,13 +65,7 @@ p {
     max-width: 600px;
 }
 
-#menu-bar:visited {
-    color: black;
-}
 
-#menu-bar:hover {
-    color: gray;
-}
 
 /* Project Page Styles */
 

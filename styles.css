@@ -4,7 +4,6 @@
 
 body {
     font-family: 'EB Garamond';
-    text-align: center;
 }
 
 hr {
@@ -19,13 +18,19 @@ hr {
 h1 {
     letter-spacing:3px;
     font-weight:300;
-    padding:20px;
+    text-align: center;
+    padding:10px;
 }
 
 h3 {
-    letter-spacing:3px;
     font-weight:100;
+    text-align: left;
+}
+
+h4 {
+    letter-spacing:2px;
     text-align: center;
+    font-weight:100;
 }
 
 p {
@@ -38,40 +43,41 @@ p {
 }
 
 .menu-item:link {
-    color:black;
+    color:#8C1515;
     border-bottom:none;
     text-decoration:none;
 }
 
 .menu-item:visited {
-    color:black;
+    color:#820000;
     border-bottom:none;
     text-decoration:none;
 }
 
 .menu-item:hover {
-    color:grey;
+    color:#B83A4B;
     border-bottom:none;
     text-decoration:none;
 }
 
-.menu-item:visited {
-    color: black;
-}
+/* .menu-item:visited {
+    color: #8C1515;
+} */
 
-.menu-item:hover {
+/* .menu-item:hover {
     color: gray;
-}
+} */
 
 .menu-item:active {
-    color: gray;
+    color: #B83A4B;
 }
 
 .section {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    /* text-align: center; */
     max-width: 600px;
+    /* "margin: auto; width: 80%; max-width: 800px; font-family: 'Open Sans', sans-serif;" */
 }
 
 
@@ -79,7 +85,6 @@ p {
 /* Project Page Styles */
 
 p.project {
-    padding:20px;
     font-size: 18px;
     text-align: left;
 }

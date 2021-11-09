@@ -8,33 +8,60 @@
     <body>
         <div class=section id="heading">
           <h1> Kaylee Burns </h1>
+          <h4> PhD Student, Stanford Univeristy </h4>
         </div>
-        <div class=section id="menu-bar">
-            <a class=menu-item href="index.html">
-                HOME
-            </a>
+        <div class=section id="photo" align=center>
+          <p><img src="media/kaylee.jpg" style="width:200px;"></p>
+        </div>
+        <div class=section id="menu-bar" align=center>
             <a class=menu-item href="./media/KayleeBurnsCV.pdf" target="_blank">
                 CV
             </a>
             <a class=menu-item href="https://www.linkedin.com/in/kayleeburns/" target="_blank">
                 LINKED IN
             </a>
-            <a class=menu-item href="projects.html">
-                PROJECTS
-            </a>
             <a class=menu-item href="https://github.com/kayburns" target="_blank">
                 GITHUB
             </a>
         </div>
+        <div class=section align=center>
+          <!-- <p> Welcome. I'm a third year PhD student studying Computer Science at 
+              Stanford University.
+          </p> -->
+        </div>
         <hr/>
-        <div class=section id="intro">
-          <p> Welcome. I'm a computer vision researcher and spectator of cognitive
-          neuroscience. My research objective is to develop perceptual systems
-          that enable agents to interact with the world effectively. In
-          accordance with this goal, I investigate the robustness of computer
-          vision systems against dataset bias and domain shifts and develop tasks
-          inspired by developmental psychology to elicit more refined reasoning
-          capabilities from models.
+
+        <div class=section id="heading">
+            <h2 align='left'> Publications </h2>
+        </div>
+        <div class=section>
+            <h3> Exploiting Attention to Reveal Shortcomings in Memory Models </h3>
+            <a class=menu-item class=project href="https://aclanthology.org/W18-5454.pdf" target="_blank">
+                paper
+            </a>
+                <p class=project> The decision making processes of deep networks are difficult to understand and while their accuracy often improves with increased architectural complexity, so too does their opacity. Practical use of machine learning models, especially for question and answering applications, demands a system that is interpretable. We analyze the attention of a memory network model to reconcile contradictory performance on a challenging question-answering dataset that is inspired by theory-of-mind experiments. We equate success on questions to task classification, which explains not only test-time failures but also how well the model generalizes to new training conditions. </p>
+            <br>
+            <h3> Object Hallucination in Image Captioning </h3>
+            <a class=menu-item href="https://arxiv.org/pdf/1809.02156.pdf" target="_blank">
+                paper
+            </a>
+                <p class=project> Despite continuously improving performance, contemporary image captioning models are prone to "hallucinating" objects that are not actually in a scene. One problem is that standard metrics only measure similarity to ground truth captions and may not fully capture image relevance. In this work, we propose a new image relevance metric to evaluate current models with veridical visual labels and assess their rate of object hallucination. We analyze how captioning model architectures and learning objectives contribute to object hallucination, explore when hallucination is likely due to image misclassification or language priors, and assess how well current sentence metrics capture object hallucination. We investigate these questions on the standard image captioning benchmark, MSCOCO, using a diverse set of models. Our analysis yields several interesting findings, including that models which score best on standard sentence metrics do not always have lower hallucination and that models which hallucinate more tend to make errors driven by language priors.</p>
+            <h3> Evaluating Theory of Mind in Question Answering </h3>
+            <a class=menu-item href="https://arxiv.org/pdf/1808.09352.pdf" target="_blank">
+                paper
+            </a>
+            <a class=menu-item href="https://github.com/kayburns/tom-qa-dataset" target="_blank">
+                code
+            </a>
+                <p class=project> We propose a new dataset for evaluating question answering models with respect to their capacity to reason about beliefs. our tasks are inspired by theory-of-mind experiments that examine whether children are able to reason about the beliefs of others, in particular when those beliefs differ from reality. we evaluate a number of recent neural models with memory augmentation. we find that all fail on our tasks, which require keeping track of inconsistent states of the world; moreover, the models’ accuracy decreases notably when random sentences are introduced to the tasks at test. </p>
+            <h3> Women also Snowboard: Overcoming Bias in Captioning Models </h3>
+            <a class=menu-item href="https://arxiv.org/pdf/1803.09797.pdf" target="_blank">
+                paper
+            </a>
+            <a class=menu-item href="https://github.com/kayburns/women-snowboard/tree/master/research/im2txt" target="_blank">
+                code
+            </a>
+                <p class=project> Most machine learning methods are known to capture and exploit biases of the training data. While some biases are beneficial for learning, others are harmful. Specifically, image captioning models tend to exaggerate biases present in training data (e.g., if a word is present in 60% of training sentences, it might be predicted in 70% of sentences at test time). This can lead to incorrect captions in domains where unbiased captions are desired, or required, due to over-reliance on the learned prior and image context. In this work we investigate generation of gender-specific caption words (e.g. man, woman) based on the appearance or the image context. We introduce a new Equalizer model that encourages equal gender probability when gender evidence is occluded in a scene and confident predictions when gender evidence is present. The resulting model is forced to look at a person rather than use contextual cues to make a gender-specific prediction. The losses that comprise our model, the Appearance Confusion Loss and the Confident Loss, are general, and can be added to any description model in order to mitigate impacts of unwanted bias in a description dataset. Our proposed model has lower error than prior work when describing images with people and mentioning their gender and more closely matches the ground truth ratio of sentences including women to sentences including men. Finally, we show that our model is more often looking at people when predicting their gender. </p>
         </div>
     </body>
 </html>
